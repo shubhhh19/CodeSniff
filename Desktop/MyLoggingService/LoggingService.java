@@ -21,11 +21,11 @@ public class LoggingService {
                     Socket clientSocket = serverSocket.accept();
                     System.out.println("New client connected: " + clientSocket.getInetAddress().getHostAddress());
 
-                    // Notify user about successful client connection
+                    // Notify the user about successful client connection
                     PrintWriter notifyWriter = new PrintWriter(clientSocket.getOutputStream(), true);
                     notifyWriter.println("Connected to the logging service successfully.");
 
-                    // Handle client in a separate thread
+                    // Handle the client in a separate thread
                     new Thread(() -> handleClient(clientSocket)).start();
                 }
             }

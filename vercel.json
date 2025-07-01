@@ -1,13 +1,7 @@
 {
   "version": 2,
+  "buildCommand": "./build.sh",
   "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    },
     {
       "src": "backend/src/main.py",
       "use": "@vercel/python"
@@ -15,12 +9,8 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "backend/src/main.py"
-    },
-    {
       "src": "/(.*)",
-      "dest": "frontend/dist/$1"
+      "dest": "backend/src/main.py"
     }
   ]
 } 

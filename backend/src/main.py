@@ -37,9 +37,15 @@ def serve(path):
     if static_folder_path is None:
             return "Static folder not configured", 404
 
+    # Handle API routes
+    if path.startswith('api/'):
+        return "API route not found", 404
+
+    # Serve static files
     if path != "" and os.path.exists(os.path.join(static_folder_path, path)):
         return send_from_directory(static_folder_path, path)
     else:
+        # Serve index.html for all other routes (SPA routing)
         index_path = os.path.join(static_folder_path, 'index.html')
         if os.path.exists(index_path):
             return send_from_directory(static_folder_path, 'index.html')

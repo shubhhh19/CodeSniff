@@ -8,13 +8,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Debug: Print the loaded API keys
-print("ANTHROPIC_API_KEY loaded:", bool(os.getenv("ANTHROPIC_API_KEY")))
+print("CLAUDE_API_KEY loaded:", bool(os.getenv("CLAUDE_API_KEY")))
 
 code_review_bp = Blueprint("code_review", __name__)
 
 # Anthropic Claude API Configuration
 ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+ANTHROPIC_API_KEY = os.getenv("CLAUDE_API_KEY")
 
 # Language detection patterns
 LANGUAGE_PATTERNS = {
@@ -184,7 +184,7 @@ def health_check():
         "success": True,
         "service": "AI Code Reviewer API",
         "status": "healthy",
-        "claude_configured": bool(os.getenv("ANTHROPIC_API_KEY"))
+        "claude_configured": bool(os.getenv("CLAUDE_API_KEY"))
     })
 
 @code_review_bp.route("/test-api", methods=["GET"])

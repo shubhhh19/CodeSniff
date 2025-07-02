@@ -50,7 +50,7 @@ def serve(path):
         else:
             # Fallback if no frontend is built yet
             return jsonify({
-                "message": "AI Code Reviewer API",
+                "message": "CodeSniff API",
                 "status": "running",
                 "note": "Frontend not built yet. Build the frontend to see the UI.",
                 "endpoints": [
@@ -66,7 +66,7 @@ def health_check():
     """Health check endpoint"""
     return jsonify({
         "success": True,
-        "service": "AI Code Reviewer API",
+        "service": "CodeSniff API",
         "status": "healthy",
         "claude_configured": bool(os.getenv("CLAUDE_API_KEY"))
     })
@@ -76,7 +76,7 @@ def api_health_check():
     """API health check endpoint"""
     return jsonify({
         "success": True,
-        "service": "AI Code Reviewer API",
+        "service": "CodeSniff API",
         "status": "healthy",
         "claude_configured": bool(os.getenv("CLAUDE_API_KEY"))
     })

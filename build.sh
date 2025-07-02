@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Building AI Code Reviewer for Vercel..."
+echo "🚀 Building CodeSniff for Vercel..."
 
 # Build frontend
 echo "📦 Building frontend..."

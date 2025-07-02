@@ -1,4 +1,4 @@
-# AI Code Reviewer
+# CodeSniff
 
 A full-stack web application for intelligent, context-aware code reviews using AI. Paste or upload your code and receive detailed feedback on bugs, optimizations, best practices, and security concerns.
 
@@ -27,8 +27,8 @@ A full-stack web application for intelligent, context-aware code reviews using A
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/shubhhh19/AI-Code-Reviewer.git
-cd AI-Code-Reviewer
+git clone https://github.com/shubhhh19/CodeSniff.git
+cd CodeSniff
 ```
 
 ### 2. Backend Setup

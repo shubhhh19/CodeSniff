@@ -1,4 +1,4 @@
-app = "ai-code-reviewer"
+app = "codesniff"
 primary_region = "iad"
 
 [build]

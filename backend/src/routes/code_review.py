@@ -182,7 +182,7 @@ def health_check():
     """Health check endpoint"""
     return jsonify({
         "success": True,
-        "service": "AI Code Reviewer API",
+        "service": "CodeSniff API",
         "status": "healthy",
         "claude_configured": bool(os.getenv("CLAUDE_API_KEY"))
     })

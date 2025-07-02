@@ -1,7 +1,7 @@
 {
-  "name": "ai-code-reviewer",
+  "name": "codesniff",
   "version": "1.0.0",
-  "description": "AI-powered code review application",
+  "description": "CodeSniff - AI-powered code review application",
   "scripts": {
     "build": "./build.sh",
     "dev": "cd frontend && npm run dev",

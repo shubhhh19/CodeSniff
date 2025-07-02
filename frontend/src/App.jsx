@@ -165,13 +165,13 @@ function App() {
       <div className="w-full bg-gradient-to-b from-primary/5 to-transparent py-8 mb-8 border-b">
         <div className="container mx-auto max-w-4xl px-4 flex items-center justify-between">
           <div className="text-left">
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-2 tracking-tight">AI Code Reviewer</h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold mb-2 tracking-tight">CodeSniff</h1>
             <p className="text-lg md:text-2xl text-muted-foreground mb-2">Get intelligent, instant feedback and explanations for your code.</p>
             <div className="text-sm text-muted-foreground">Made by <span className="font-semibold">Shubh Soni</span> — <a href="https://shubhsoni.framer.website/" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary ml-1">Portfolio</a></div>
           </div>
           <div className="flex items-center gap-2">
             <Button asChild variant="outline" size="icon" className="h-10 w-10" title="Report an Issue">
-              <a href="https://github.com/shubhsoni/ai-code-reviewer/issues" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/shubhsoni/codesniff/issues" target="_blank" rel="noopener noreferrer">
                 <AlertCircle className="h-6 w-6" />
               </a>
             </Button>
@@ -460,7 +460,7 @@ function App() {
           <div className="container mx-auto max-w-4xl px-4 grid md:grid-cols-3 gap-8 text-sm text-muted-foreground">
             <div>
               <h3 className="font-bold mb-2">About</h3>
-              <p>AI Code Reviewer is your personal code review assistant. Paste or upload your code, and get instant, actionable feedback powered by state-of-the-art AI. Perfect for students, professionals, and anyone who wants to write better code.</p>
+              <p>CodeSniff is your personal code review assistant. Paste or upload your code, and get instant, actionable feedback powered by state-of-the-art AI. Perfect for students, professionals, and anyone who wants to write better code.</p>
             </div>
             <div>
               <h3 className="font-bold mb-2">Features</h3>
@@ -496,7 +496,7 @@ function App() {
             </div>
           </div>
           <div className="text-center text-xs text-muted-foreground mt-8">
-            AI Code Reviewer by <span className="font-semibold">Shubh Soni</span> — <a href="https://shubhsoni.framer.website/" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary ml-1">Portfolio</a>
+            CodeSniff by <span className="font-semibold">Shubh Soni</span> — <a href="https://shubhsoni.framer.website/" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary ml-1">Portfolio</a>
           </div>
         </footer>
       </div>

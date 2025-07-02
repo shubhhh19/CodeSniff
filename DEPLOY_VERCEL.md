@@ -29,7 +29,7 @@ Set these in Vercel dashboard:
 
 1. Go to [vercel.com](https://vercel.com)
 2. Sign up with GitHub
-3. Import your repository: `shubhhh19/AI-Code-Reviewer`
+3. Import your repository: `shubhhh19/CodeSniff`
 4. Vercel will auto-detect it's a Python project
 5. Add environment variables in the dashboard
 6. Deploy!

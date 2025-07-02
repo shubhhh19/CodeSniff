@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "./build.sh",
   "builds": [
     {
       "src": "backend/src/main.py",

@@ -8,13 +8,18 @@ cd frontend
 npm install
 npm run build
 
+# Ensure backend static directory exists
+echo "📋 Preparing backend static directory..."
+cd ../backend/src
+mkdir -p static
+
 # Copy built files to backend static directory
 echo "📋 Copying built files to backend..."
-cp -r dist/* ../backend/src/static/
+cp -r ../../frontend/dist/* static/
 
 # Install Python dependencies
 echo "🐍 Installing Python dependencies..."
-cd ../backend
+cd ..
 pip install -r requirements.txt
 
 echo "✅ Build complete!" 

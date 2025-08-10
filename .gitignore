@@ -12,3 +12,8 @@ dist/
 # System
 .DS_Store
 
+
+# Personal directories (ignored)
+/Desktop/
+/Documents/
+/Downloads/
